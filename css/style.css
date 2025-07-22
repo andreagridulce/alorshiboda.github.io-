@@ -1,0 +1,45 @@
+/* Paleta: oliva, beige, blanco, toques dorados */
+:root {
+  --oliva: #708238;
+  --beige: #f5f0e1;
+  --blanco: #ffffff;
+  --dorado: #cfa864;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: var(--oliva);
+  background: var(--beige);
+  line-height: 1.6;
+}
+.hero {
+  text-align: center;
+  padding: 2rem;
+  background: var(--blanco);
+}
+.logo {
+  max-width: 200px;
+}
+h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  margin: .5rem 0;
+}
+h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+section {
+  max-width: 600px;
+  margin: 1.5rem auto;
+  padding: 1rem;
+  background: var(--blanco);
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: .9rem;
+}
