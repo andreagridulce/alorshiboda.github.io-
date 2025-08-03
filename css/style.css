@@ -43,3 +43,14 @@ footer {
   padding: 1rem;
   font-size: .9rem;
 }
+/* Estilo “póster” para el mensaje de bienvenida */
+.welcome-message {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--oliva);
+  margin-top: 1.5rem;
+  text-align: center;
+  line-height: 1.4;
+}
