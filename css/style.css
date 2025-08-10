@@ -54,3 +54,22 @@ footer {
   text-align: center;
   line-height: 1.4;
 }
+/* Fondo a toda la página con velo suave para que el texto se lea */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    linear-gradient(rgba(245,240,225,0.85), rgba(245,240,225,0.85)),
+    url("images/bg.webp") center/cover no-repeat;
+  z-index: -1;
+}
+
+/* Secciones con blanco translúcido para más contraste sobre el fondo */
+.hero, section, footer {
+  background: rgba(255,255,255,0.88);
+  backdrop-filter: blur(2px); /* opcional */
+}
+
+/* Ajusta el logo y encabezado para que respiren sobre el fondo */
+.logo { width: 180px; height: auto; }
