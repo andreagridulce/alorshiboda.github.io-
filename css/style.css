@@ -61,7 +61,7 @@ body::before {
   inset: 0;
   background:
     linear-gradient(rgba(245,240,225,0.85), rgba(245,240,225,0.85)),
-    url("images/bg.webp") center/cover no-repeat;
+    url("images/Fondo web.webp") center/cover no-repeat;
   z-index: -1;
 }
 
