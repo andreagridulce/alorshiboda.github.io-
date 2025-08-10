@@ -54,14 +54,23 @@ footer {
   text-align: center;
   line-height: 1.4;
 }
-/* Fondo a toda la página con velo suave para que el texto se lea */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: var(--oliva);
+  line-height: 1.6;
+  position: relative;         /* para que ::before funcione bien */
+  background: transparent;    /* no tapar la imagen */
+}
+
+/* Fondo a toda la página con velo suave */
 body::before {
   content: "";
   position: fixed;
   inset: 0;
   background:
     linear-gradient(rgba(245,240,225,0.85), rgba(245,240,225,0.85)),
-    url("images/fondo.webp") center/cover no-repeat;
+    url("../images/fondo.webp") center/cover no-repeat;
   z-index: -1;
 }
 
