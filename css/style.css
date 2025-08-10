@@ -69,10 +69,10 @@ body::before {
   position: fixed;
   inset: 0;
   background:
-    linear-gradient(rgba(245,240,225,0.85), rgba(245,240,225,0.25)),
+    linear-gradient(rgba(245,240,225,0.30), rgba(245,240,225,0.30)),
     url("../images/fondo.webp") center/cover no-repeat;
+  filter: contrast(1.05) saturate(1.05);
   z-index: -1;
-}
 
 /* Secciones con blanco translúcido para más contraste sobre el fondo */
 .hero, section, footer {
