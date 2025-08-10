@@ -73,6 +73,8 @@ body::before {
 
 /* Ajusta el logo y encabezado para que respiren sobre el fondo */
 .logo { width: 180px; height: auto; }
+
+
 .rsvp-actions { display: grid; gap: .75rem; grid-template-columns: 1fr 1fr; }
 .btn {
   display: inline-block; text-align: center; padding: .75rem 1rem; border-radius: 10px;
