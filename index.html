@@ -9,7 +9,27 @@
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const params = new URLSearchParams(window.location.search);
+  const nombre = params.get('n');   // nombre del invitado
+  const pasesStr = params.get('p'); // nº de pases
+
+  const box = document.getElementById('tu-invitacion');
+  if (!nombre || !pasesStr) { box.style.display = 'none'; return; }
+
+  const pases = parseInt(pasesStr, 10);
+  if (Number.isNaN(pases)) { box.style.display = 'none'; return; }
+
+  // Rellenar de forma segura
+  document.getElementById('invite-name').textContent = nombre;
+  document.getElementById('invite-count').textContent = `${pases} ${pases === 1 ? 'pase' : 'pases'}`;
+
+  box.style.display = 'block';
+});
+</script>
+  
+  <body>
   <header class="hero">
     <img src="images/logo.png" alt="Logo AlorshiBoda" class="logo">
     <p class="verse">
@@ -37,6 +57,13 @@
       width="100%" height="300" frameborder="0" style="border:0" allowfullscreen>
     </iframe>
   </section>
+
+  <section id="tu-invitacion" class="invite-box" style="display:none">
+  <h2>Tu invitación</h2>
+  <p>Hola <strong id="invite-name"></strong>, este link es para ti.</p>
+  <p>Dispones de <strong id="invite-count"></strong> para la boda.</p>
+  <small>Si ves un error, por favor escríbenos 💌</small>
+</section>
 
  <section id="rsvp">
   <h2>Confirmar asistencia</h2>
