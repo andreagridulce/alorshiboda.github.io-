@@ -83,7 +83,15 @@ body::before {
 /* Ajusta el logo y encabezado para que respiren sobre el fondo */
 .logo { width: 180px; height: auto; }
 
-
+  .invite-box{
+  max-width: 640px;
+  margin: 1.5rem auto;
+  padding: 1rem 1.25rem;
+  background: rgba(255,255,255,0.92);
+  border: 2px dashed var(--oliva);
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,.06);
+}
 .rsvp-actions { display: grid; gap: .75rem; grid-template-columns: 1fr 1fr; }
 .btn {
   display: inline-block; text-align: center; padding: .75rem 1rem; border-radius: 10px;
@@ -94,13 +102,3 @@ body::before {
   background: transparent; border: 2px solid var(--oliva); color: var(--oliva);
 }
 @media (max-width: 520px){ .rsvp-actions { grid-template-columns: 1fr; } }
-
-  .invite-box{
-  max-width: 640px;
-  margin: 1.5rem auto;
-  padding: 1rem 1.25rem;
-  background: rgba(255,255,255,0.92);
-  border: 2px dashed var(--oliva);
-  border-radius: 12px;
-  box-shadow: 0 2px 5px rgba(0,0,0,.06);
-}
