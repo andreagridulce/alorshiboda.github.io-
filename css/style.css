@@ -102,3 +102,25 @@ body::before {
   background: transparent; border: 2px solid var(--oliva); color: var(--oliva);
 }
 @media (max-width: 520px){ .rsvp-actions { grid-template-columns: 1fr; } }
+
+.gift-box{
+  max-width: 760px; margin: 1.5rem auto; padding: 1.25rem;
+  background: rgba(255,255,255,0.92); border: 2px dashed var(--oliva);
+  border-radius: 14px; box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
+.gift-actions{
+  display: grid; gap: 1rem; grid-template-columns: 1fr; margin-top: .75rem;
+}
+.card{
+  background: #fff; border: 1px solid #e9e6dc; border-radius: 10px; padding: 1rem;
+}
+.card h3{ margin: 0 0 .5rem 0; font-size: 1.1rem; color: var(--oliva); }
+.qr{ display:block; width: 140px; height:auto; margin:.25rem auto 0; }
+@media(min-width:700px){
+  .gift-actions{ grid-template-columns: 1fr 1fr 1fr; }
+}
+.btn{
+  display:inline-block; padding:.6rem .9rem; border-radius:10px;
+  background: var(--oliva); color:#fff; text-decoration:none; font-weight:600;
+}
+.btn:hover{ opacity:.92; }
