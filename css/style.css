@@ -94,3 +94,13 @@ body::before {
   background: transparent; border: 2px solid var(--oliva); color: var(--oliva);
 }
 @media (max-width: 520px){ .rsvp-actions { grid-template-columns: 1fr; } }
+
+  .invite-box{
+  max-width: 640px;
+  margin: 1.5rem auto;
+  padding: 1rem 1.25rem;
+  background: rgba(255,255,255,0.92);
+  border: 2px dashed var(--oliva);
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,.06);
+}
