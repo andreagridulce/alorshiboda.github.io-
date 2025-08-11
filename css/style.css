@@ -124,3 +124,49 @@ body::before {
   background: var(--oliva); color:#fff; text-decoration:none; font-weight:600;
 }
 .btn:hover{ opacity:.92; }
+.countdown{
+  max-width: 760px;
+  margin: 1.5rem auto;
+  padding: 1rem 1.25rem;
+  background: rgba(255,255,255,0.92);
+  border: 2px dashed var(--oliva);
+  border-radius: 14px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+  text-align: center;
+}
+.timer{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: .75rem;
+  margin-top: .5rem;
+}
+.timer .box{
+  background: #fff;
+  border: 1px solid #e9e6dc;
+  border-radius: 12px;
+  padding: .8rem .6rem;
+}
+.timer span{
+  display:block;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.2rem;
+  letter-spacing: .04em;
+  color: var(--oliva);
+  line-height: 1;
+}
+.timer small{
+  display:block;
+  margin-top: .25rem;
+  color:#6d6a62;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  font-size: .75rem;
+}
+.countdown-note{
+  margin-top: .75rem;
+  color:#6d6a62;
+  font-size: .95rem;
+}
+@media (max-width:600px){
+  .timer span{ font-size: 1.9rem; }
+}
